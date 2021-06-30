@@ -19,7 +19,7 @@ header {
     box-sizing: border-box;
 }
 .logo{
-    color:var(--secondary-color);
+    color:var(--sixth-a-color);
     background-color: var(--seventh-background);
     position: absolute;
     top: 5px;
@@ -37,7 +37,7 @@ header {
 .logo:hover{
     /* color: #fff; */
     /* background: rgb(212, 143, 16); */
-    color:var(--tenth-hover-a-logo-color);
+    color:var(--secondary-color);
     box-shadow:inset 3px 3px 6px var(--eighth-hover-a-first), inset -3px -3px 6px var(--ninth-hover-a-second);
 }
 nav{
@@ -124,17 +124,22 @@ margin: 0;
     cursor: pointer;
 }
 
+h2,p,pre {
+    color: var(--font-color);
+}
+
 :root{
     --primary-color: #eee;
-    --secondary-color: #000000;
+    --secondary-color: #23abff;
     --third-color-border:#f7f7f7;
     --forth-box-shadow-one:#b8b9be; 
     --fifth-box-shadow-two:#fff;
-    --sixth-a-color: #23abff;
+    --sixth-a-color: #000000;
     --seventh-background:#fff;
     --eighth-hover-a-first:#b8b9be;
     --ninth-hover-a-second:#fff;
     --tenth-hover-a-logo-color:#000000;
+    --font-color:#000000;
 
 }
 .dark-theme{
@@ -148,6 +153,8 @@ margin: 0;
     --eighth-hover-a-first:#000000;
     --ninth-hover-a-second:rgb(0, 0, 0);
     --tenth-hover-a-logo-color:#000000;
+    --font-color:#ffffff;
+}
 
 @media (max-width:991px){
     header{
