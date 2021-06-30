@@ -87,16 +87,20 @@ li{
     box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .master{
     position: relative;
     box-sizing: border-box;
 }
 =======
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 
 .material{
     position: absolute;
     top: 200px;
+<<<<<<< HEAD
 <<<<<<< HEAD
     left: 50px;
     padding-top: 0;
@@ -115,6 +119,9 @@ margin: 0;
     position: absolute;
     left: 450px;
 }
+=======
+}   
+>>>>>>> upstream/master
 =======
 }   
 >>>>>>> upstream/master
