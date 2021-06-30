@@ -86,14 +86,18 @@ li{
 .menu-toggle:hover{
     box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
 }
+<<<<<<< HEAD
 .master{
     position: relative;
     box-sizing: border-box;
 }
+=======
+>>>>>>> upstream/master
 
 .material{
     position: absolute;
     top: 200px;
+<<<<<<< HEAD
     left: 50px;
     padding-top: 0;
     box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
@@ -111,6 +115,9 @@ margin: 0;
     position: absolute;
     left: 450px;
 }
+=======
+}   
+>>>>>>> upstream/master
 
 @media (max-width:991px){
     header{
