@@ -19,7 +19,7 @@ header {
     box-sizing: border-box;
 }
 .logo{
-    color:var(--sixth-a-color);
+    color:var(--font-color);
     background-color: var(--seventh-background);
     position: absolute;
     top: 5px;
@@ -37,7 +37,7 @@ header {
 .logo:hover{
     /* color: #fff; */
     /* background: rgb(212, 143, 16); */
-    color:var(--secondary-color);
+    color:var(--logo-color);
     box-shadow:inset 3px 3px 6px var(--eighth-hover-a-first), inset -3px -3px 6px var(--ninth-hover-a-second);
 }
 nav{
@@ -140,6 +140,7 @@ h2,p,pre {
     --ninth-hover-a-second:#fff;
     --tenth-hover-a-logo-color:#000000;
     --font-color:#000000;
+    --logo-color:#23abff;
 
 }
 .dark-theme{
@@ -154,6 +155,7 @@ h2,p,pre {
     --ninth-hover-a-second:rgb(0, 0, 0);
     --tenth-hover-a-logo-color:#000000;
     --font-color:#ffffff;
+    --logo-color:#000000;
 }
 
 @media (max-width:991px){
