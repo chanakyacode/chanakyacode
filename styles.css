@@ -1,8 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background: #eee;
+    background:var(--primary-color);
 }
+
+
+
 header {
     position: absolute;
     top: 10px;
@@ -16,7 +19,8 @@ header {
     box-sizing: border-box;
 }
 .logo{
-    color: #000000;
+    color:var(--secondary-color);
+    background-color: var(--seventh-background);
     position: absolute;
     top: 5px;
     height: 30px;
@@ -24,16 +28,17 @@ header {
     font-size: 24px;
     float: left;
     cursor: pointer;
-    border: 1px solid #f7f7f7;
+    border: 1px solid var(--third-color-border);
     border-radius: 10px;
-    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    box-shadow: 3px 3px 6px var(--forth-box-shadow-one), -3px -3px 6px var(--fifth-box-shadow-two);
     padding: 5px 15px;
-    transition: all 0.4s;
+    transition: all 0.8s;
 }
 .logo:hover{
     /* color: #fff; */
     /* background: rgb(212, 143, 16); */
-    box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
+    color:var(--tenth-hover-a-logo-color);
+    box-shadow:inset 3px 3px 6px var(--eighth-hover-a-first), inset -3px -3px 6px var(--ninth-hover-a-second);
 }
 nav{
  float: right;
@@ -53,24 +58,26 @@ li{
 } */
  a{
     height: 50px;
+    background-color: var(--seventh-background);
     line-height: 50px;
     padding: 5px 20px;
     text-decoration: none;
     display: inline;
     font-size: 20px;
-    color: #23abff;
+    color: var(--sixth-a-color);
     margin-right: 15px;
-    border: 1px solid #f7f7f7;
+    border: 1px solid var(--third-color-border);
     border-radius: 10px;
-    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    transition: all 0.8s;
+    box-shadow: 3px 3px 6px var(--forth-box-shadow-one), -3px -3px 6px var(--fifth-box-shadow-two);
 }
  a:hover {
-    
-    box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
+    color: var(--tenth-hover-a-logo-color);
+    box-shadow:inset 3px 3px 6px var(--eighth-hover-a-first), inset -3px -3px 6px var(--ninth-hover-a-second);
 }
  .active{
     /* background: #23abff; */
-    color: #000000;
+    color:var(--secondary-color);
 }
 .menu-toggle{
     float: right;
@@ -78,33 +85,25 @@ li{
     font-size: 24px;
     padding: 0 24px;
     cursor: pointer;
-    border: 1px solid #f7f7f7;
+    border: 1px solid var(--third-color-border);
     border-radius: 10px;
-    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    box-shadow: 3px 3px 6px var(--forth-box-shadow-one), -3px -3px 6px var(--fifth-box-shadow-two);
     display: none;
 }
 .menu-toggle:hover{
-    box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
+    box-shadow:inset 3px 3px 6px var(--eighth-hover-a-first), inset -3px -3px 6px var(--ninth-hover-a-second);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .master{
     position: relative;
     box-sizing: border-box;
 }
-=======
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
 
 .material{
     position: absolute;
     top: 200px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     left: 50px;
     padding-top: 0;
-    box-shadow:inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
+    box-shadow:inset 3px 3px 6px var(--forth-box-shadow-one), inset -3px -3px 6px var(--fifth-box-shadow-two);
     padding-right: 20px;
     padding-left: 0;
 }   
@@ -119,12 +118,36 @@ margin: 0;
     position: absolute;
     left: 450px;
 }
-=======
-}   
->>>>>>> upstream/master
-=======
-}   
->>>>>>> upstream/master
+
+#moon{
+    width: 20px;
+    cursor: pointer;
+}
+
+:root{
+    --primary-color: #eee;
+    --secondary-color: #000000;
+    --third-color-border:#f7f7f7;
+    --forth-box-shadow-one:#b8b9be; 
+    --fifth-box-shadow-two:#fff;
+    --sixth-a-color: #23abff;
+    --seventh-background:#fff;
+    --eighth-hover-a-first:#b8b9be;
+    --ninth-hover-a-second:#fff;
+    --tenth-hover-a-logo-color:#000000;
+
+}
+.dark-theme{
+    --primary-color: rgb(53, 53, 53);
+    --secondary-color: #ffffff;
+    --third-color-border:#000000;
+    --forth-box-shadow-one:#000000; 
+    --fifth-box-shadow-two:rgb(0, 0, 0);
+    --sixth-a-color: #ffffff;
+    --seventh-background:rgb(63, 63, 63);
+    --eighth-hover-a-first:#000000;
+    --ninth-hover-a-second:rgb(0, 0, 0);
+    --tenth-hover-a-logo-color:#000000;
 
 @media (max-width:991px){
     header{
@@ -143,11 +166,11 @@ margin: 0;
         opacity: 0;
         visibility: hidden;
     }
-    nav.active{
+    .active{
         opacity: 1;
         visibility: visible;
     }
-    ul{
+    /* ul{
         display: block;
         width: 100%;
         text-align: center;
@@ -155,12 +178,12 @@ margin: 0;
     }
     li{
         padding: 5px 0;
-    }
-    li a{
+    } */
+    a{
         width: 80%;
         margin: 5px auto;
         border: 1px solid #f7f7f7;
         border-radius: 10px;
-        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70,70,70,0.15);
+        box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
     }
 }
